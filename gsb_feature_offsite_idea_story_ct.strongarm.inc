@@ -19,10 +19,10 @@ function gsb_feature_offsite_idea_story_ct_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '15',
+          'weight' => '14',
         ),
         'title' => array(
-          'weight' => '3',
+          'weight' => '1',
         ),
         'path' => array(
           'weight' => '13',
