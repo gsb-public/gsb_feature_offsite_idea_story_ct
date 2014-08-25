@@ -38,5 +38,17 @@ function gsb_feature_offsite_idea_story_ct_field_group_info() {
   );
   $export['group_alumni_story|node|offsite_idea_story|form'] = $field_group;
 
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_wrapper_title|node|offsite_idea_story|news_listing';
+  $field_group->group_name = 'group_wrapper_title';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'offsite_idea_story';
+  $field_group->mode = 'news_listing';
+  $field_group->parent_name = '';
+  $field_group->data = '';
+  $export['group_wrapper_title|node|offsite_idea_story|news_listing'] = $field_group;
+
   return $export;
 }
