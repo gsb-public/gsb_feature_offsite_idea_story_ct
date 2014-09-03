@@ -41,6 +41,41 @@ function gsb_feature_offsite_idea_story_ct_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_wrapper_idea_story_text|node|offsite_idea_story|teaser';
+  $field_group->group_name = 'group_wrapper_idea_story_text';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'offsite_idea_story';
+  $field_group->mode = 'teaser';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Offsite Idea Story text wrapper',
+    'weight' => '2',
+    'children' => array(
+      0 => 'field_date',
+      1 => 'field_editorial_summary',
+      2 => 'field_key_taxonomy',
+      3 => 'field_publisher',
+      4 => 'group_wrapper_title',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Offsite Idea Story text wrapper',
+      'instance_settings' => array(
+        'classes' => '',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'none',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $export['group_wrapper_idea_story_text|node|offsite_idea_story|teaser'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_wrapper_title|node|offsite_idea_story|news_listing';
   $field_group->group_name = 'group_wrapper_title';
   $field_group->entity_type = 'node';
@@ -78,10 +113,10 @@ function gsb_feature_offsite_idea_story_ct_field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'offsite_idea_story';
   $field_group->mode = 'teaser';
-  $field_group->parent_name = '';
+  $field_group->parent_name = 'group_wrapper_idea_story_text';
   $field_group->data = array(
     'label' => 'Title wrapper',
-    'weight' => '3',
+    'weight' => '4',
     'children' => array(
       0 => 'field_link_single',
       1 => 'media_icon',
