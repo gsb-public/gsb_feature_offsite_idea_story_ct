@@ -76,6 +76,9 @@ function gsb_feature_offsite_idea_story_ct_strongarm() {
       'revision' => array(
         'custom_settings' => FALSE,
       ),
+      'idea_story_latest_stories' => array(
+        'custom_settings' => TRUE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
