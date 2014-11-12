@@ -76,23 +76,20 @@ function gsb_feature_offsite_idea_story_ct_strongarm() {
       'revision' => array(
         'custom_settings' => FALSE,
       ),
-      'idea_story_latest_stories' => array(
-        'custom_settings' => TRUE,
-      ),
     ),
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '16',
+          'weight' => '15',
         ),
         'title' => array(
           'weight' => '1',
         ),
         'path' => array(
-          'weight' => '14',
+          'weight' => '12',
         ),
         'redirect' => array(
-          'weight' => '13',
+          'weight' => '11',
         ),
       ),
       'display' => array(),

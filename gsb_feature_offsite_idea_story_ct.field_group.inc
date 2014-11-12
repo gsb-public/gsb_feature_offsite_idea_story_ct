@@ -13,6 +13,60 @@ function gsb_feature_offsite_idea_story_ct_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_academic_area|node|offsite_idea_story|form';
+  $field_group->group_name = 'group_academic_area';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'offsite_idea_story';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_taxonomy';
+  $field_group->data = array(
+    'label' => 'Academic Area',
+    'weight' => '13',
+    'children' => array(
+      0 => 'field_academic_area_unlimited',
+    ),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_academic_area|node|offsite_idea_story|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_additional_topics|node|offsite_idea_story|form';
+  $field_group->group_name = 'group_additional_topics';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'offsite_idea_story';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_taxonomy';
+  $field_group->data = array(
+    'label' => 'Additional Topics',
+    'weight' => '14',
+    'children' => array(
+      0 => 'field_business_insight_topic',
+    ),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_additional_topics|node|offsite_idea_story|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_alumni_story|node|offsite_idea_story|form';
   $field_group->group_name = 'group_alumni_story';
   $field_group->entity_type = 'node';
@@ -49,7 +103,7 @@ function gsb_feature_offsite_idea_story_ct_field_group_info() {
   $field_group->parent_name = 'group_taxonomy';
   $field_group->data = array(
     'label' => 'Centers',
-    'weight' => '17',
+    'weight' => '16',
     'children' => array(
       0 => 'field_centers_research_programs',
     ),
@@ -68,6 +122,33 @@ function gsb_feature_offsite_idea_story_ct_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_regions_of_interest|node|offsite_idea_story|form';
+  $field_group->group_name = 'group_regions_of_interest';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'offsite_idea_story';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_taxonomy';
+  $field_group->data = array(
+    'label' => 'Regions of Interest',
+    'weight' => '15',
+    'children' => array(
+      0 => 'field_region_of_interest',
+    ),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_regions_of_interest|node|offsite_idea_story|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_tags|node|offsite_idea_story|form';
   $field_group->group_name = 'group_tags';
   $field_group->entity_type = 'node';
@@ -76,7 +157,7 @@ function gsb_feature_offsite_idea_story_ct_field_group_info() {
   $field_group->parent_name = 'group_taxonomy';
   $field_group->data = array(
     'label' => 'Tags',
-    'weight' => '18',
+    'weight' => '17',
     'children' => array(
       0 => 'field_tag',
     ),
@@ -105,8 +186,11 @@ function gsb_feature_offsite_idea_story_ct_field_group_info() {
     'label' => 'Tagging',
     'weight' => '10',
     'children' => array(
-      0 => 'group_centers',
-      1 => 'group_tags',
+      0 => 'group_academic_area',
+      1 => 'group_centers',
+      2 => 'group_tags',
+      3 => 'group_additional_topics',
+      4 => 'group_regions_of_interest',
     ),
     'format_type' => 'tabs',
     'format_settings' => array(
