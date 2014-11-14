@@ -28,6 +28,12 @@ function gsb_feature_offsite_idea_story_ct_field_default_field_instances() {
         'type' => 'taxonomy_term_reference_link',
         'weight' => 16,
       ),
+      'idea_story_latest_stories' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 16,
+      ),
       'idea_story_related' => array(
         'label' => 'above',
         'settings' => array(),
@@ -155,6 +161,12 @@ function gsb_feature_offsite_idea_story_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'taxonomy_term_reference_link',
+        'weight' => 17,
+      ),
+      'idea_story_latest_stories' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 17,
       ),
       'idea_story_related' => array(
@@ -1037,6 +1049,12 @@ function gsb_feature_offsite_idea_story_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'taxonomy_term_reference_link',
+        'weight' => 18,
+      ),
+      'idea_story_latest_stories' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 18,
       ),
       'idea_story_related' => array(
