@@ -12,6 +12,49 @@ function gsb_feature_offsite_idea_story_ct_ds_field_settings_info() {
 
   $ds_fieldsetting = new stdClass();
   $ds_fieldsetting->api_version = 1;
+  $ds_fieldsetting->id = 'node|offsite_idea_story|alumni_featured_content';
+  $ds_fieldsetting->entity_type = 'node';
+  $ds_fieldsetting->bundle = 'offsite_idea_story';
+  $ds_fieldsetting->view_mode = 'alumni_featured_content';
+  $ds_fieldsetting->settings = array(
+    'field_icon' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+        ),
+      ),
+    ),
+    'field_link_single' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'h2',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+    'field_publisher' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+  );
+  $export['node|offsite_idea_story|alumni_featured_content'] = $ds_fieldsetting;
+
+  $ds_fieldsetting = new stdClass();
+  $ds_fieldsetting->api_version = 1;
   $ds_fieldsetting->id = 'node|offsite_idea_story|idea_story_latest_stories';
   $ds_fieldsetting->entity_type = 'node';
   $ds_fieldsetting->bundle = 'offsite_idea_story';
@@ -390,6 +433,38 @@ function gsb_feature_offsite_idea_story_ct_ds_field_settings_info() {
  */
 function gsb_feature_offsite_idea_story_ct_ds_layout_settings_info() {
   $export = array();
+
+  $ds_layout = new stdClass();
+  $ds_layout->api_version = 1;
+  $ds_layout->id = 'node|offsite_idea_story|alumni_featured_content';
+  $ds_layout->entity_type = 'node';
+  $ds_layout->bundle = 'offsite_idea_story';
+  $ds_layout->view_mode = 'alumni_featured_content';
+  $ds_layout->layout = 'ds_1col';
+  $ds_layout->settings = array(
+    'regions' => array(
+      'ds_content' => array(
+        0 => 'field_publisher',
+        1 => 'field_icon',
+        2 => 'field_link_single',
+      ),
+    ),
+    'fields' => array(
+      'field_publisher' => 'ds_content',
+      'field_icon' => 'ds_content',
+      'field_link_single' => 'ds_content',
+    ),
+    'classes' => array(),
+    'wrappers' => array(
+      'ds_content' => 'div',
+    ),
+    'layout_wrapper' => 'div',
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+  );
+  $export['node|offsite_idea_story|alumni_featured_content'] = $ds_layout;
 
   $ds_layout = new stdClass();
   $ds_layout->api_version = 1;

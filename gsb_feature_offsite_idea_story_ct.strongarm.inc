@@ -79,6 +79,12 @@ function gsb_feature_offsite_idea_story_ct_strongarm() {
       'idea_story_latest_stories' => array(
         'custom_settings' => TRUE,
       ),
+      'alumni_featured_content' => array(
+        'custom_settings' => TRUE,
+      ),
+      'alumni_reunion_agenda_list' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
