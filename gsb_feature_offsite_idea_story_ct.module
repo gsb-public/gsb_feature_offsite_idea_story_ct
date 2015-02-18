@@ -47,4 +47,8 @@ function gsb_feature_offsite_idea_story_ct_offsite_idea_story_node_form_validate
       form_set_error('field_program_unlimited]['.$language.'][0][tid', $field_label . ' field is required.');
     }
   }
+  else {
+    $form_state['complete form']['field_program_unlimited']['und']['#value'] = array();
+    $form_state['values']['field_program_unlimited']['und'] = array();
+  }
 }
