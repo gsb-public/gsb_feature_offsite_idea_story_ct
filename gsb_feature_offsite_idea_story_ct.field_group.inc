@@ -280,7 +280,7 @@ function gsb_feature_offsite_idea_story_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Title wrapper',
-    'weight' => '0',
+    'weight' => '1',
     'children' => array(
       0 => 'field_link_single',
       1 => 'media_icon',
@@ -312,7 +312,7 @@ function gsb_feature_offsite_idea_story_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Title wrapper',
-    'weight' => '0',
+    'weight' => '1',
     'children' => array(
       0 => 'field_link_single',
       1 => 'media_icon',
