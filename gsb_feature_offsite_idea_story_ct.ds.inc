@@ -426,6 +426,19 @@ function gsb_feature_offsite_idea_story_ct_ds_field_settings_info() {
         ),
       ),
     ),
+    'field_image_key_image' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
     'field_link_single' => array(
       'formatter_settings' => array(
         'ft' => array(
@@ -436,12 +449,6 @@ function gsb_feature_offsite_idea_story_ct_ds_field_settings_info() {
           'ow-def-cl' => FALSE,
           'ow-at' => '',
           'ow-def-at' => FALSE,
-          'fi' => TRUE,
-          'fi-el' => 'h3',
-          'fi-cl' => '',
-          'fi-at' => '',
-          'fi-def-at' => FALSE,
-          'fi-odd-even' => FALSE,
         ),
       ),
     ),
@@ -449,6 +456,7 @@ function gsb_feature_offsite_idea_story_ct_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
+          'suffix' => '<span class="pipe">|</span>',
           'ow' => TRUE,
           'ow-el' => 'span',
           'ow-cl' => '',
@@ -461,19 +469,7 @@ function gsb_feature_offsite_idea_story_ct_ds_field_settings_info() {
           'fi-at' => '',
           'fi-def-at' => FALSE,
           'fi-odd-even' => FALSE,
-        ),
-      ),
-    ),
-    'field_image_key_image' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'ow' => TRUE,
-          'ow-el' => 'div',
-          'ow-cl' => '',
-          'ow-def-cl' => TRUE,
-          'ow-at' => '',
-          'ow-def-at' => FALSE,
+          'fi-first-last' => FALSE,
         ),
       ),
     ),
@@ -833,6 +829,7 @@ function gsb_feature_offsite_idea_story_ct_ds_layout_settings_info() {
     'layout_attributes_merge' => 1,
     'layout_link_attribute' => '',
     'layout_link_custom' => '',
+    'layout_disable_css' => 0,
   );
   $export['node|offsite_idea_story|news_listing'] = $ds_layout;
 
