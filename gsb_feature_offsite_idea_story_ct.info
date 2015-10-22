@@ -78,5 +78,6 @@ features[variable][] = menu_parent_offsite_idea_story
 features[variable][] = node_options_offsite_idea_story
 features[variable][] = node_preview_offsite_idea_story
 features[variable][] = node_submitted_offsite_idea_story
+features[variable][] = pathauto_node_offsite_idea_story_pattern
 features[variable][] = workbench_access_node_type_offsite_idea_story
 features[variable][] = workbench_moderation_default_state_offsite_idea_story

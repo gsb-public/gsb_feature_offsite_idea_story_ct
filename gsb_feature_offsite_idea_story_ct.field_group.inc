@@ -222,7 +222,8 @@ function gsb_feature_offsite_idea_story_ct_field_group_info() {
     'format_settings' => array(
       'label' => 'Dek wrapper',
       'instance_settings' => array(
-        'classes' => '',
+        'id' => '',
+        'classes' => 'group-wrapper-dek',
         'description' => '',
         'show_label' => '0',
         'label_element' => 'h3',
@@ -257,7 +258,8 @@ function gsb_feature_offsite_idea_story_ct_field_group_info() {
     'format_settings' => array(
       'label' => 'Offsite Idea Story text wrapper',
       'instance_settings' => array(
-        'classes' => '',
+        'id' => '',
+        'classes' => 'group-wrapper-idea-story-text',
         'description' => '',
         'show_label' => '0',
         'label_element' => 'h3',
@@ -289,7 +291,8 @@ function gsb_feature_offsite_idea_story_ct_field_group_info() {
     'format_settings' => array(
       'label' => 'Title wrapper',
       'instance_settings' => array(
-        'classes' => '',
+        'id' => '',
+        'classes' => 'group-wrapper-title',
         'description' => '',
         'show_label' => '0',
         'label_element' => 'h3',
@@ -321,7 +324,8 @@ function gsb_feature_offsite_idea_story_ct_field_group_info() {
     'format_settings' => array(
       'label' => 'Title wrapper',
       'instance_settings' => array(
-        'classes' => '',
+        'id' => '',
+        'classes' => 'group-wrapper-title',
         'description' => '',
         'show_label' => '0',
         'label_element' => 'h3',
@@ -353,7 +357,8 @@ function gsb_feature_offsite_idea_story_ct_field_group_info() {
     'format_settings' => array(
       'label' => 'Title wrapper',
       'instance_settings' => array(
-        'classes' => '',
+        'id' => '',
+        'classes' => 'group-wrapper-title',
         'description' => '',
         'show_label' => '0',
         'label_element' => 'h3',
@@ -385,7 +390,8 @@ function gsb_feature_offsite_idea_story_ct_field_group_info() {
     'format_settings' => array(
       'label' => 'Title wrapper',
       'instance_settings' => array(
-        'classes' => '',
+        'id' => '',
+        'classes' => 'group-wrapper-title',
         'description' => '',
         'show_label' => '0',
         'label_element' => 'h3',
@@ -417,7 +423,8 @@ function gsb_feature_offsite_idea_story_ct_field_group_info() {
     'format_settings' => array(
       'label' => 'Title wrapper',
       'instance_settings' => array(
-        'classes' => '',
+        'id' => '',
+        'classes' => 'group-wrapper-title',
         'description' => '',
         'show_label' => '0',
         'label_element' => 'h3',
