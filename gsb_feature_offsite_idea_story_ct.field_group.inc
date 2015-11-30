@@ -187,10 +187,10 @@ function gsb_feature_offsite_idea_story_ct_field_group_info() {
     'weight' => '10',
     'children' => array(
       0 => 'group_academic_area',
-      1 => 'group_centers',
-      2 => 'group_tags',
-      3 => 'group_additional_topics',
-      4 => 'group_regions_of_interest',
+      1 => 'group_additional_topics',
+      2 => 'group_centers',
+      3 => 'group_regions_of_interest',
+      4 => 'group_tags',
     ),
     'format_type' => 'tabs',
     'format_settings' => array(

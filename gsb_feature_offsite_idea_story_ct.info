@@ -16,6 +16,7 @@ dependencies[] = gsb_feature_base_fields
 dependencies[] = gsb_field_formatter
 dependencies[] = hs_taxonomy
 dependencies[] = image
+dependencies[] = image_link_formatter
 dependencies[] = link
 dependencies[] = list
 dependencies[] = options
